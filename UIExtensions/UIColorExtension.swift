@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
     class func colorWithHex(hex: uint) -> UIColor {
         let blue = Float(hex & 0x000000FF)
