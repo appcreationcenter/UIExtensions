@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIColor {
     
-    class func colorWithHex(hex: uint) -> UIColor {
+    class func colorWithHex(_ hex: uint) -> UIColor {
         let blue = Float(hex & 0x000000FF)
         let green = Float((hex & 0x0000FF00) >> 8)
         let red = Float((hex & 0x00FF0000) >> 16)

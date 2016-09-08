@@ -11,7 +11,7 @@ import UIKit
 public extension UIView {
     var left: CGFloat { return self.frame.origin.x }
     
-    func setLeft(x: CGFloat) {
+    func setLeft(_ x: CGFloat) {
         var frame: CGRect = self.frame
         frame.origin.x = x
         self.frame = frame
@@ -19,7 +19,7 @@ public extension UIView {
     
     var top: CGFloat { return self.frame.origin.y }
     
-    func setTop(y: CGFloat) {
+    func setTop(_ y: CGFloat) {
         var frame: CGRect = self.frame
         frame.origin.y = y
         self.frame = frame
@@ -27,7 +27,7 @@ public extension UIView {
     
     var right: CGFloat { return self.frame.origin.x + self.frame.size.width }
     
-    func setRight(right: CGFloat) {
+    func setRight(_ right: CGFloat) {
         var frame: CGRect = self.frame
         frame.origin.x = right - frame.size.width
         self.frame = frame
@@ -35,7 +35,7 @@ public extension UIView {
     
     var bottom: CGFloat { return self.frame.origin.y + self.frame.size.height }
     
-    func setBottom(bottom: CGFloat) {
+    func setBottom(_ bottom: CGFloat) {
         var frame: CGRect = self.frame
         frame.origin.y = bottom - frame.size.height
         self.frame = frame
@@ -43,7 +43,7 @@ public extension UIView {
     
     var width: CGFloat { return self.frame.size.width }
     
-    func setWidth(width: CGFloat) {
+    func setWidth(_ width: CGFloat) {
         var frame: CGRect = self.frame
         frame.size.width = width
         self.frame = frame
@@ -51,7 +51,7 @@ public extension UIView {
     
     var height: CGFloat { return self.frame.size.height }
     
-    func setHeight(height: CGFloat) {
+    func setHeight(_ height: CGFloat) {
         var frame: CGRect = self.frame
         frame.size.height = height
         self.frame = frame
@@ -59,7 +59,7 @@ public extension UIView {
     
     var origin: CGPoint { return self.frame.origin }
     
-    func setOrigin(origin: CGPoint) {
+    func setOrigin(_ origin: CGPoint) {
         var frame: CGRect = self.frame
         frame.origin = origin
         self.frame = frame
@@ -67,7 +67,7 @@ public extension UIView {
     
     var size: CGSize { return self.frame.size }
     
-    func setSize(size: CGSize) {
+    func setSize(_ size: CGSize) {
         var frame: CGRect = self.frame
         frame.size = size
         self.frame = frame
@@ -75,5 +75,5 @@ public extension UIView {
     
     var viewCenter: CGPoint { return CGPoint(x: self.frame.width / 2, y: self.frame.height / 2) }
     
-    var screenCenter: CGPoint { return CGPoint(x: UIScreen.mainScreen().bounds.width / 2, y: UIScreen.mainScreen().bounds.height / 2) }
+    var screenCenter: CGPoint { return CGPoint(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2) }
 }
